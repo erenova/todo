@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <form data-new-project-form>
+            <label for="newProject">
+               New Project </label> 
+               <input 
+               data-new-project-input
+               type="text" 
+               id="newProject">
+            
+            <button type="submit">Add Project</button>
+        </form>
+        <form data-new-todo-form>
+            <label for="newTodo">
+               New Todo </label> <input 
+               data-new-todo-input
+               type="text" id="newTodo">
+            
+            <button type="submit">Add Todo</button>
+        </form>
+        <button class="delete-button"
+        data-delete-project-button>Delete Project</button>
+        <button class="delete-completed-button"
+        data-clear-completed-button >Clear Completed</button>
+    </nav>
+    <main>
+        <div class="project-section">
+            <h1>Project List</h1>
+            <ul class="project-list" data-projects></ul>
+        </div>
+        <div class="todo-section" data-todo-display-container>
+            <h1>Todo list</h1>
+            <h2 data-todo-title></h2>
+            <p class="tasks-count" data-list-count></p>
+            <div class="todo-list" data-tasks>
+
+            </div>
+        </div>
+    </main>
+    <template id="task-template">
+        <div class="task">
+            <input type="checkbox">
+            <label><span class="custom-checkbox"></span></label>
+        </div>
+    </template>
+</body>
+</html>

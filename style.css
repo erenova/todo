@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    gap: 5vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main {
+    display: flex;
+    gap: 30vw;
+}
+
+.project-item.active-item {
+    font-size: 1.2rem;
+    color: blue;
+    
+}
+
+.todo-list, .project-list {
+    overflow: auto;
+    height: 70vh;
+}
